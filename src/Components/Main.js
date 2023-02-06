@@ -7,7 +7,7 @@ Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https
 
 export default function Main(){
     return(
-        <div className="flex flex-col h-full" id="background">
+        <div className="flex flex-col h-full">
             <MainBanner/>
             <MidBanner/>
         </div>
@@ -15,26 +15,21 @@ export default function Main(){
 }
 function MainBanner(){
     return(
-            <div className="flex">
+            <div className="flex bg-violet-700">
                 <div className="w-1/3">
                     <div className="flex justify-center">
                         <div className="relative w-60 h-100">
-                            <img className="rounded-full border border-gray-100 shadow-sm" src={profile} alt="user" />
+                            <img className="rounded-full shadow-sm" src={profile} alt="profile" />
                         </div>
                     </div>
                 </div>
-                <div className="w-2/3 flex flex-col place-items-center h-100 justify-center">
-                    <h1 class="text-center font-header text-4x sm:text-left sm:text-5xl md:text-6xl font-roboto-slab">
+                <div className="w-2/3 flex flex-col place-items-center h-100 justify-center text-white">
+                    <h1 class="text-center font-header text-4x sm:text-left sm:text-5xl md:text-6xl">
                     Hello I'm Calvin Yu!
                     </h1>
                     <div className="flex">
                         <h3>Let's Connect!</h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
-                        stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-                        <GitHub/>
-                        <LinkedLn/>
+                        <Socials/>
                     </div>
                 </div>
             </div>
@@ -45,6 +40,18 @@ function MidBanner(){
         <div>
 
         </div>
+    )
+}
+function Socials(){
+    return(
+        <>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+            <GitHub/>
+            <LinkedLn/>
+        </>
     )
 }
 function LinkedLn(){
