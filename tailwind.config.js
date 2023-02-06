@@ -2,7 +2,9 @@
 module.exports = {
   content: ["./src/Components/**/*.{html,js}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      'body': ['"Roboto Slab']
+    }
   },
   plugins: [],
 }
