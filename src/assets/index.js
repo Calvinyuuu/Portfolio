@@ -15,6 +15,7 @@ import javascript from "./tech/javascript.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
+import typescript from "./tech/typescript.png";
 
 import apple from "./company/apple.png";
 import uniqlo from "./company/uniqlo.svg";
@@ -25,6 +26,8 @@ import rahf from "./rahf.png";
 import snews from "./snews.png";
 import sst from "./samsamtech.png";
 import ddlc from "./ddlc.png";
+import unwrapped from "./unwrapped.png";
+import link from "./link.png";
 
 export {
   logo,
@@ -51,4 +54,7 @@ export {
   snews,
   sst,
   ddlc,
+  unwrapped,
+  typescript,
+  link,
 };

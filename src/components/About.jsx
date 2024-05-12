@@ -46,7 +46,7 @@ const About = () => {
         During my academic journey through the CST Diploma, I actively pursued opportunities to acquire new skills, broaden my knowledge, and forge meaningful connections with like-minded individuals who shared a common drive for excellence. Week after week, I eagerly embraced the challenges presented by the program, constantly pushing myself to overcome obstacles and establish a solid foundation in development.
 
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 justify-around">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
