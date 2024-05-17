@@ -22,11 +22,11 @@ import uniqlo from "./company/uniqlo.svg";
 import costco from "./company/costco.svg";
 import dzpc from "./company/dzpc.png";
 
-import rahf from "./rahf.png";
-import snews from "./snews.png";
-import sst from "./samsamtech.png";
-import ddlc from "./ddlc.png";
-import unwrapped from "./unwrapped.png";
+import rahf from "./rahf.jpg";
+import snews from "./snews.jpg";
+import sst from "./samsamtech.jpg";
+import ddlc from "./ddlc.jpg";
+import unwrapped from "./unwrapped.jpg";
 import link from "./link.png";
 
 export {
