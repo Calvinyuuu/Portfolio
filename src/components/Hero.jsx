@@ -1,6 +1,7 @@
 // import { motion } from "framer-motion";
-import { styles } from "../styles"
+import { styles } from "../styles";
 import { socials } from "../constants";
+import HeroAnimated from "./HeroAnimated";
 
 const Hero = () => {
   return (
@@ -13,41 +14,34 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.sectionHeadText} text-white`}>
-            Hi, I'm <span className="text-white">Calvin</span>
-          </h1>
-          <p className={`${styles.sectionDescriptionText}`}>
+          <HeroAnimated />
+
+          <p className={`${styles.sectionDescriptionText} animate-fade-up animate-delay-[1700ms]`}>
             I'm a recent graduate from BCIT - CST Diploma Program
             <br className="sm:block hidden" />
             Currently looking for internships or junior developer positions
             <br className="sm:block hidden" />
           </p>
-
-          <div>
-            <p className={`${styles.sectionDescriptionText}`}>
-              Here are my socials :
-            </p>
+          <div className="animate-fade-up animate-delay-[1850ms]">
+            <div>
+              <p className={`${styles.sectionDescriptionText}`}>Here are my socials :</p>
+            </div>
+            <div className="flex flex-row">
+              {socials.map((soc, index) => (
+                <div
+                  key={index}
+                  onClick={() => window.open(soc.link, "_blank")}
+                  className="w-10 h-10 flex items-center cursor-pointer"
+                >
+                  <img src={soc.icon} alt="source code" className="w-4/5 h-4/5 object-contain" />
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="flex flex-row">
-            {socials.map((soc, index) => (
-              <div
-                key={index}
-                onClick={() => window.open(soc.link, "_blank")}
-                className="w-10 h-10 flex items-center cursor-pointer"
-              >
-                <img
-                  src={soc.icon}
-                  alt="source code"
-                  className="w-4/5 h-4/5 object-contain"
-                />
-              </div>
-            ))}
-          </div>
-
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
